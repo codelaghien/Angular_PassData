@@ -26,10 +26,14 @@ export class ParentComponent implements OnInit, OnDestroy {
       .pipe(takeUntil(this.destroy$))
       .subscribe((data) => {
         // console.log('Parent', data);
-        this.users = data?.results?.slice(0, 5);
+        this.users = data?.results?.slice(0, 3);
         this.totalUsers = this.users.length;
         console.log('Parent', this.users);
       });
+  }
+
+  usersChange(data): void {
+    console.log('Parent nhận được từ Child: usersChange', data);
   }
 
   ngOnDestroy(): void {

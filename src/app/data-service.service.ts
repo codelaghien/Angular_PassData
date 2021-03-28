@@ -9,7 +9,7 @@ import { retry, catchError, delay } from 'rxjs/operators';
 })
 export class DataServiceService {
   // private REST_API_SERVER = 'http://localhost:5000/users';
-  private REST_API_SERVER = 'https://randomuser.me/api/?results=3';
+  private REST_API_SERVER = 'https://randomuser.me/api/?results=10';
 
   constructor(private httpClient: HttpClient) {}
 

@@ -1,6 +1,7 @@
 <div>
   <h3 style="margin-top: -10px; margin-left: -20px">Child component</h3>
   <p>Child works!</p>
+  <button (click)="refreshData()">Refresh</button>
   <ul>
     <li *ngFor="let user of users">{{ user?.name?.first }}</li>
   </ul>
