@@ -1,0 +1,11 @@
+<div>
+  <h3 style="margin-top: -10px; margin-left: -20px">Parent component</h3>
+  <p>Parent works!</p>
+  <button (click)="refreshData()">Refresh</button>
+  <input [(ngModel)]="totalUsers" />
+  <ul>
+    <li *ngFor="let user of users">{{ user?.name?.first }}</li>
+  </ul>
+  <br />
+  <app-child [users]="users"></app-child>
+</div>
