@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "AngularPassData"
+  "defaultProject": "AngularPassData",
+  "cli": {
+    "analytics": "86d11f2b-06cb-491e-9559-025f5fff2891"
+  }
 }

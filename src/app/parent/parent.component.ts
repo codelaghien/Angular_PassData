@@ -25,7 +25,7 @@ export class ParentComponent implements OnInit, OnDestroy {
       .getUsers()
       .pipe(takeUntil(this.destroy$))
       .subscribe((data) => {
-        // console.log('Parent', data);
+        console.log('Parent', data);
         this.users = data?.results?.slice(0, 5);
         this.totalUsers = this.users.length;
         console.log('Parent', this.users);

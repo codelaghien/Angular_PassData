@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'AngularPassData';
-  users = [{ name: { first: 'Huy' } }];
+  users = [{ name: { first: 'Fanky' } }];
 }
